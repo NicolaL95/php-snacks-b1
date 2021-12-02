@@ -1,15 +1,4 @@
-<?php
-$match = array(
-    array("Milano","Piacenza",103,97),
-     array("Torino","Livorno",73,82),
-      array("Palermo","Bari",88,88),
-       array("Cremona","Firenze",111,99),
-);
 
-for ($x = 0; $x < count($match); $x++) {
-  echo $match[$x][0], ' - ', $match[$x][1], ' | ', $match[$x][2] ,' - ', $match[$x][3], "<br>";
-}
-?>
 
 
 
@@ -22,6 +11,17 @@ for ($x = 0; $x < count($match); $x++) {
     <title>Document</title>
 </head>
 <body>
-    
+    <?php
+$match = array(
+    array("Milano","Piacenza",103,97),
+     array("Torino","Livorno",73,82),
+      array("Palermo","Bari",88,88),
+       array("Cremona","Firenze",111,99),
+);
+
+for ($x = 0; $x < count($match); $x++) {
+  echo '<p>', $match[$x][0], ' - ', $match[$x][1], ' | ', $match[$x][2] ,' - ', $match[$x][3],  '</p>',"<br>";
+}
+?>
 </body>
 </html>
