@@ -1,7 +1,6 @@
 <?php
-$guests = ["Stefano","Nicola","Andrea","Paolo","Mario","Fabio"];
-$invited = $_GET["guest"];
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,8 +10,9 @@ $invited = $_GET["guest"];
     <title>Document</title>
 </head>
 <body>
-    <?php
-   echo "<p>",in_array($invited, $guests) ? 'ok' : 'ko',"</p>";
-    ?>
+    <form action="./guestname.php" method="Get">
+Name: <input type="text" name="guest">
+<input type="submit">
+</form>
 </body>
 </html>
