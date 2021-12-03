@@ -47,7 +47,7 @@ $aAds = [];
     }
 }
  $wAds = rand(0,(count($aAds)-1));
- echo "<img src=",$aAds[$wAds]['image_path'] ," alt=''>","<br>", "<a href=",$aAds[$wAds]['link'],">Segui questo link</a>";
+  echo "<img src=",$aAds[$wAds]['image_path'] ," alt=''>","<br>", "<a href=",$aAds[$wAds]['link'],">Segui questo link</a>";
  
  ?>   
 </body>
