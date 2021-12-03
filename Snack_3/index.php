@@ -49,13 +49,18 @@ $posts = [
 </head>
 <body>
     <?php
- foreach ($posts as &$post) {
-   echo '<p>', key($post), '<br>';
-  foreach ($posts as &$posted) {
-   echo $posted;
-}
-echo '</p>';
-} 
-?>
+    $keys=array_keys($posts)
+    for($i=0; $i < count($keys); $i++){
+        $key = $keys[$i];?>
+
+<h1><?php echo $key; ?></h1>
+
+       <?php for($x=0; $x < count($posts[$keys]); $x++){
+$post = $posts[$key][$j];?>
+    <h4><?php echo $post['title']; ?></h4>
+    <p><?php echo $post['text']; ?></p>
+        }
+    }
+    ?>
 </body>
 </html>
